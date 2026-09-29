@@ -3,9 +3,11 @@ import java.util.Scanner;
 public class Selection_ifelse13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("---Print KRS SIAKAD ---");
         System.out.print("Enter current Semester: ");
         int semester = sc.nextInt();
+
         if (semester == 1) {
             System.out.println("KRS Semester 1 Displayed");
         } else if (semester == 2) {
@@ -25,6 +27,7 @@ public class Selection_ifelse13 {
         } else {
             System.out.println("Invalid semester");
         }
+
         sc.close();
     }
 }
