@@ -1,14 +1,13 @@
 <div align="center">
 
-<img src="images/logo-polinema.png" alt="Politeknik Negeri Malang" width="120">
+
 
 # Basic Programming Practicum Report
 ## Session 6: Selection Statements 2
 
 **Department of Information Technology — Politeknik Negeri Malang — 2026/2027**
 
-</div>
-
+<div align="center">
 | | |
 |---|---|
 | **Name** | Fauz Dino |
