@@ -4,7 +4,7 @@
 **Department of Information Technology — Politeknik Negeri Malang — 2026/2027**
 
 <div align="center">
-<div>
+</div>
 | | |
 |---|---|
 | **Name** | Fauz Dino |
@@ -13,20 +13,6 @@
 | **Class** | 1I |
 
 ---
-
-## Table of Contents
-
-- [Objectives](#objectives)
-- [Project Structure](#project-structure)
-- [How to Run](#how-to-run)
-- [Experiment 1: Nested IF — Thesis Exam Eligibility](#experiment-1-nested-if--thesis-exam-eligibility)
-- [Experiment 2: Logical Operators — Campus WiFi Access](#experiment-2-logical-operators--campus-wifi-access)
-- [Experiment 3: Nested IF and Logical Operators — Laboratory Access](#experiment-3-nested-if-and-logical-operators--laboratory-access)
-- [Assignment 1: Bookstore Discount](#assignment-1-bookstore-discount)
-- [Assignment 2: Lab Assistant Selection](#assignment-2-lab-assistant-selection)
-
----
-
 ## Objectives
 
 1. Solve problems/case studies using selection statement syntax.
