@@ -21,43 +21,6 @@
 2. Implement selection statement syntax in Java programs.
 3. Apply the logical operators `&&`, `||`, and `!` within selection structures.
 
-## Project Structure
-
-```text
-.
-├── README.md
-├── code/
-│   ├── NestedThesisExamAttendance13.java
-│   ├── LogicalOperatorWifiAttendance13.java
-│   ├── NestedLabAccessAttendance13.java
-│   ├── BookAssignment13.java
-│   └── Task2AssistantSelectionAttendance13.java
-└── images/
-    ├── logo-polinema.png
-    ├── exp1-output.png
-    ├── exp2-output-1-student.png
-    ├── exp2-output-2-lecturer.png
-    ├── exp2-output-3-blocked.png
-    ├── exp2-output-4-none.png
-    ├── assignment1-flowchart.png
-    ├── assignment1-output.png
-    ├── assignment2-flowchart.png
-    └── assignment2-output.png
-```
-
-## How to Run
-
-Requires JDK 11 or newer.
-
-```bash
-cd code
-javac NestedThesisExamAttendance13.java
-java NestedThesisExamAttendance13
-```
-
-Replace the file name with any other program in the `code/` folder. With JDK 11+, you can also run a file directly: `java BookAssignment13.java`.
-
----
 
 ## Experiment 1: Nested IF — Thesis Exam Eligibility
 
