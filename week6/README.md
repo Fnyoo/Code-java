@@ -255,13 +255,15 @@ The program reads four boolean values in this order: `isActiveStudent`, `isSanct
 
 ## Assignment 1: Bookstore Discount
 
-Implement the Week 6 Exercise 2 flowchart for the bookstore discount system as a Java program using Nested IF and logical operators where needed.
+Every Wednesday, a bookstore gives discounts to its customers depending on the type of book purchased
 
-| Book type | Base discount | Quantity rule |
-|---|---|---|
-| Dictionary | 10% | +2% if quantity > 2 |
-| Novel | 7% | +2% if quantity > 3, otherwise +1% |
-| Other | 0% | 5% if quantity > 3 |
+A 10% discount is given if the book purchased is a dictionary; an additional 2% discount is given if more than 2 books are purchased
+
+A 7% discount is given if the book purchased is a novel; an additional 2% discount is given if more than 3 novels are purchased, while if 3 or fewer novels are purchased, an additional 1% discount is given
+
+Customers get a 5% discount on books other than dictionaries and novels if more than 3 books are purchased
+
+Create a flowchart (use logical operators) to determine the total amount to be paid if the input is the type and number of books, and the output is the discount amount
 
 ### Flowchart
 
