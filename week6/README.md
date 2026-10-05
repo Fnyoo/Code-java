@@ -1,6 +1,3 @@
-<div align="center">
-
-<img src="images/logo-polinema.png" alt="Politeknik Negeri Malang" width="120">
 
 # Basic Programming Practicum Report
 ## Session 6: Selection Statements 2
@@ -18,61 +15,11 @@
 
 ---
 
-## Table of Contents
-
-- [Objectives](#objectives)
-- [Project Structure](#project-structure)
-- [How to Run](#how-to-run)
-- [Experiment 1: Nested IF — Thesis Exam Eligibility](#experiment-1-nested-if--thesis-exam-eligibility)
-- [Experiment 2: Logical Operators — Campus WiFi Access](#experiment-2-logical-operators--campus-wifi-access)
-- [Experiment 3: Nested IF and Logical Operators — Laboratory Access](#experiment-3-nested-if-and-logical-operators--laboratory-access)
-- [Assignment 1: Bookstore Discount](#assignment-1-bookstore-discount)
-- [Assignment 2: Lab Assistant Selection](#assignment-2-lab-assistant-selection)
-
----
-
 ## Objectives
 
 1. Solve problems/case studies using selection statement syntax.
 2. Implement selection statement syntax in Java programs.
 3. Apply the logical operators `&&`, `||`, and `!` within selection structures.
-
-## Project Structure
-
-```text
-.
-├── README.md
-├── code/
-│   ├── NestedThesisExamAttendance13.java
-│   ├── LogicalOperatorWifiAttendance13.java
-│   ├── NestedLabAccessAttendance13.java
-│   ├── BookAssignment13.java
-│   └── Task2AssistantSelectionAttendance13.java
-└── images/
-    ├── logo-polinema.png
-    ├── exp1-output.png
-    ├── exp1-code-snippet.png
-    ├── exp2-output-1-student.png
-    ├── exp2-output-2-lecturer.png
-    ├── exp2-output-3-blocked.png
-    ├── exp2-output-4-none.png
-    ├── assignment1-flowchart.png
-    ├── assignment1-output.png
-    ├── assignment2-flowchart.png
-    └── assignment2-output.png
-```
-
-## How to Run
-
-Requires JDK 11 or newer.
-
-```bash
-cd code
-javac NestedThesisExamAttendance13.java
-java NestedThesisExamAttendance13
-```
-
-Replace the file name with any other program in the `code/` folder. With JDK 11+, you can also run a file directly: `java BookAssignment13.java`.
 
 ---
 
