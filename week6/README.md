@@ -3,8 +3,9 @@
 
 **Department of Information Technology — Politeknik Negeri Malang — 2026/2027**
 
-</div>
 <div align="center">
+</div>
+
 
 | | |
 |---|---|
