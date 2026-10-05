@@ -1,13 +1,10 @@
-<div align="center">
-
-
-
 # Basic Programming Practicum Report
 ## Session 6: Selection Statements 2
 
 **Department of Information Technology — Politeknik Negeri Malang — 2026/2027**
 
 <div align="center">
+<div>
 | | |
 |---|---|
 | **Name** | Fauz Dino |
