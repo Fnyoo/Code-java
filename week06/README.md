@@ -1,6 +1,6 @@
 
 # Basic Programming Practicum Report
-## Session 7: CASE STUDY: SELECTION STRUCTURES WITH GIT AND GITHUB
+## Session 6: SELECTION STATEMENTS 2
 
 **Department of Information Technology — Politeknik Negeri Malang — 2026/2027**
 
