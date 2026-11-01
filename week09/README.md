@@ -25,7 +25,7 @@ Flowchart:
 
 ![Experiment 1 Flowchart](images/exp1-flowchart.png)
 
-Source code: code/SiakadForAttendance13.java
+Source code: `code/SiakadForAttendance13.java`
 ```java
 import java.util.Scanner;
 public class SiakadForAttendance13 {
