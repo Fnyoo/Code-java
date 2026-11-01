@@ -83,6 +83,38 @@ if (score < lowest) {
 
 Added `pass` and `fail` counters (`score >= 60` → `pass++`, otherwise `fail++`) and displayed them after the highest and lowest scores.
 
+```java
+import java.util.Scanner;
+public class SiakadForAttendance13 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double score, highest = 0, lowest = 100;
+        int pass = 0, fail = 0;
+
+        for (int i = 1; i <= 10; i++){
+            System.out.print("Enter Score for student " + i + ":");
+            score = sc.nextDouble();
+            if (score > highest) {
+                highest = score;
+            }
+            if (score < lowest) {
+                lowest = score;
+            }
+            if (score >= 60){
+                pass++; 
+            }else{
+                fail++;
+            }
+        }
+        System.out.println("Highest score: " + highest);
+        System.out.println("Lowest score: " + lowest);
+        System.out.println("Number of students passed: " + pass);
+        System.out.println("Number of students failed: " + fail);
+    sc.close();
+    }
+}
+```
 ![Experiment 1 Question 4 Output](images/exp1-q4-output.png)
 
 ---
