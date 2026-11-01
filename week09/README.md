@@ -115,7 +115,7 @@ public class SiakadForAttendance13 {
     }
 }
 ```
-![Experiment 1 Question 4 Output](images/exp1-q4-output.png)
+![Experiment 1 Question 4 Output](images/exp1-question4.png)
 
 ---
 
