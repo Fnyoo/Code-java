@@ -25,7 +25,7 @@ Flowchart:
 
 ![Experiment 1 Flowchart](images/exp1-flowchart.png)
 
-Source code: [`SiakadForAttendance13.java`](code/SiakadForAttendance13.java)
+Source code: [SiakadForAttendance13.java](code/SiakadForAttendance13.java)
 
 Output:
 
