@@ -25,8 +25,32 @@ Flowchart:
 
 ![Experiment 1 Flowchart](images/exp1-flowchart.png)
 
-Source code: [SiakadForAttendance13.java](code/SiakadForAttendance13.java)
+Source code: code/SiakadForAttendance13.java
+```java
+import java.util.Scanner;
+public class SiakadForAttendance13 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        double score, highest = 0, lowest = 100;
+        for (int i = 1; i <= 10; i++){
+            System.out.print("Enter Score for student" + i + ":");
+            score = sc.nextDouble();
+            if (score > highest) {
+                highest = score;
+            }
+            if (score < lowest) {
+                lowest = score;
+            }
+        }
+        System.out.println("Highest score: " + highest);
+        System.out.println("Lowest score: " + lowest);
+        
+    sc.close();
+    }
+}
+
+```
 Output:
 
 ![Experiment 1 Output](images/exp1-output.png)
@@ -65,8 +89,50 @@ Added `pass` and `fail` counters (`score >= 60` → `pass++`, otherwise `fail++`
 
 ## Experiment 2: Student Grades Case Study in SIAKAD – WHILE Loop
 
-Source code: [`SiakadWhileAttendance13.java`](code/SiakadWhileAttendance13.java)
+Source code: `code/SiakadWhileAttendance13.java`
+```java
+import java.util.Scanner;
 
+public class SiakadWhileAttendance13 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int score, studentCount, i = 0 ;
+        
+        System.out.print("Enter the number of students: ");
+        studentCount = sc.nextInt();
+
+        while (i < studentCount) {
+            System.out.print("Enter score for student " + (i + 1) + ":");
+            score = sc.nextInt();
+
+            if (score < 0 || score > 100) {
+                System.out.println("Invalid score. Please enter a valid score !");
+                continue;
+            }
+            if (score > 80 && score <=100) {
+                System.out.println("The grade of student " + (i + 1 ) + " is A");
+            }else if (score > 73 && score <= 100){
+                System.out.println("The grade of student " + (i + 1) + " is B+");
+            }else if (score > 65 && score <= 73){
+                System.out.println("The grade of student " + (i +1 ) + " is B");
+            }else if (score > 60 && score <= 65){
+                System.out.println("The grade of student " + (i + 1) + " is C+");
+            }else if (score > 50 && score <= 60){
+                System.out.println("The grade of student " + (i + 1) + " is C");
+            }else if (score > 39 && score <= 50){
+                System.out.println("The grade of student " + (i + 1) + " is D");
+            }else {
+                System.out.println("The grade of student " + (i + 1) + " is E");
+            }
+            i++;
+        
+        }
+    sc.close();
+    }
+}
+
+```
 Output:
 
 ![Experiment 2 Output](images/exp2-output.png)
@@ -94,8 +160,43 @@ Added the message inside the grade `A` branch.
 
 ## Experiment 3: Café Transaction Case Study – DO-WHILE Loop
 
-Source code: [`CafeDoWhileAttendance13.java`](code/CafeDoWhileAttendance13.java)
+Source code: `CafeDoWhileAttendance13.java`
+```java
+import java.util.Scanner;
+public class CafeDoWhileAttendance13 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int  coffee, tea, bread;
+        int coffeprice = 12000,
+            teaprice = 7000,
+            breadprice = 20000;
+        int totalprice;
+        String customername;
 
+        do {
+            System.out.print("Enter customer name (type 'cancel' to exit): ");
+            customername = sc.nextLine();
+            if (customername.equalsIgnoreCase("cancel")){
+                System.out.println("Transaction canceled.");
+                break;
+            }
+            System.out.print("Coffee quantity: ");
+            coffee = sc.nextInt();
+            System.out.print("Tea quantity: ");
+            tea = sc.nextInt();
+            System.out.print("Bread quantity: ");
+            bread = sc.nextInt();
+            totalprice = (coffee * coffeprice) + (tea * teaprice) + (bread * breadprice);
+            System.out.println("Total amount to pay: Rp" + totalprice);
+            sc.nextLine();
+        }while (true); 
+            
+        System.out.println("All transactions completed.");
+    sc.close();
+    }
+}
+```
 Output:
 
 ![Experiment 3 Output](images/exp3-output.png)
@@ -124,8 +225,61 @@ A do-while loop does not require them; it only needs a condition. The program ke
 
 ### 1. Cinema ticket sales
 
-Source code: [`assignment1.java`](code/assignment1.java)
+Source code: `assignment1.java`
+```java
+import java.util.Scanner;
 
+public class assignment1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        final int TICKET_PRICE = 50000;
+
+        int ticketQuantity;
+        int totalTickets = 0;
+        int totalCustomers = 0;
+        double totalRevenue = 0;
+
+        while (true) {
+            System.out.print("Enter ticket quantity :");
+            ticketQuantity = input.nextInt();
+
+            if (ticketQuantity == 0) {
+                break;
+            }
+
+            if (ticketQuantity < 0) {
+                System.out.println("Invalid input! Please try again.");
+                continue;
+            }
+
+            double totalPrice = ticketQuantity * TICKET_PRICE;
+            double discount = 0;
+
+            if (ticketQuantity > 10) {
+                discount = 0.15;
+            } else if (ticketQuantity > 4) {
+                discount = 0.10;
+            }
+
+            double finalPrice = totalPrice - (totalPrice * discount);
+
+            totalTickets += ticketQuantity;
+            totalRevenue += finalPrice;
+            totalCustomers++;
+
+            System.out.println("Discount: " + (discount * 100) + "%");
+            System.out.println("Total payment: Rp " + finalPrice);
+        }
+
+        System.out.println("Total customers : " + totalCustomers);
+        System.out.println("Total tickets   : " + totalTickets);
+        System.out.println("Total revenue   : Rp " + totalRevenue);
+
+        input.close();
+    }
+}
+```
 Rules: more than 4 tickets → 10% discount, more than 10 tickets → 15% discount, negative quantity → ask again.
 
 Output:
@@ -138,8 +292,42 @@ Flowchart:
 
 ![Assignment 2 Flowchart](images/assignment2-flowchart.png)
 
-Source code: [`assignment2.java`](code/assignment2.java)
+Source code: `assignment2.java`
+```java
+import java.util.Scanner;
 
+public class assignment2{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int type, duration, total = 0;
+
+        do {
+            System.out.println("1 = Car");
+            System.out.println("2 = Motorcycle");
+            System.out.println("0 = Exit");
+            System.out.print("Enter vehicle type: ");
+            type = input.nextInt();
+
+            if (type == 1 || type == 2) {
+                System.out.print("Enter parking duration (hours): ");
+                duration = input.nextInt();
+
+                if (type == 1) {
+                    total += duration * 3000;
+                } else {
+                    total += duration * 2000;
+                }
+            }
+
+        } while (type != 0);
+
+        System.out.println("Total parking fee: Rp " + total);
+
+        input.close();
+    }
+}
+```
 Output:
 
 ![Assignment 2 Output](images/assignment2-output.png)
